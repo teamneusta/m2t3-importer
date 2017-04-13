@@ -1,0 +1,34 @@
+config.tx_extbase {
+    persistence{
+        enableAutomaticCacheClearing = 1
+        updateReferenceIndex = 0
+        classes {
+            TeamNeustaGmbH\M2T3\Importer\Domain\Model\FrontendUserGroup {
+                mapping {
+                    tableName = fe_groups
+                    columns {
+                        uid.mapOnProperty = uid
+                        pid.mapOnProperty = pid
+                        title.mapOnProperty = title
+                        lockToDomain.mapOnProperty = lockToDomain
+                        description.mapOnProperty = description
+                        subgroup.mapOnProperty = subgroup
+                    }
+                }
+            }
+            TeamNeustaGmbH\M2T3\Importer\Domain\Model\Page {
+                mapping {
+                    tableName = pages
+                    columns {
+                        uid.mapOnProperty = uid
+                        pid.mapOnProperty = pid
+                        title.mapOnProperty = title
+                        doktype.mapOnProperty = doktype
+                        url.mapOnProperty = url
+                        tx_m2t3_category_id.mapOnProperty = categoryId
+                    }
+                }
+            }
+        }
+    }
+}
