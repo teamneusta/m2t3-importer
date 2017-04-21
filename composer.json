@@ -27,6 +27,6 @@
     }
   },
   "require": {
-    "team-neusta-gmbh/m2t3-elastictypo": "^1.0"
+    "TeamNeustaGmbH/m2t3-elastictypo": "^1.0"
   }
 }
